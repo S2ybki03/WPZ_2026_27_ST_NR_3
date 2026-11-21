@@ -1,0 +1,16 @@
+{
+  "run": "mobilenet_v2",
+  "model": "mobilenet_v2",
+  "params_mln": 2.24,
+  "best_epoch": 12,
+  "val_acc": 0.972,
+  "test_size": 250,
+  "test_top1": 0.968,
+  "test_top5": 0.996,
+  "test_precision_macro": 0.9699,
+  "test_recall_macro": 0.9679,
+  "test_f1_macro": 0.9683,
+  "latency_ms_gpu": 7.22,
+  "latency_ms_cpu": 24.43,
+  "model_size_mb": 8.7
+}

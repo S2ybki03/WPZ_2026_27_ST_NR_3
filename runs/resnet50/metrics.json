@@ -1,0 +1,16 @@
+{
+  "run": "resnet50",
+  "model": "resnet50",
+  "params_mln": 23.53,
+  "best_epoch": 12,
+  "val_acc": 0.984,
+  "test_size": 250,
+  "test_top1": 0.992,
+  "test_top5": 1.0,
+  "test_precision_macro": 0.993,
+  "test_recall_macro": 0.9922,
+  "test_f1_macro": 0.9924,
+  "latency_ms_gpu": 9.62,
+  "latency_ms_cpu": 62.97,
+  "model_size_mb": 90.0
+}

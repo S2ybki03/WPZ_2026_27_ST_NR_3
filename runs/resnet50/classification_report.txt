@@ -1,0 +1,16 @@
+                      precision    recall  f1-score   support
+
+  Labrador retriever      0.963     1.000     0.981        26
+    Golden retriever      1.000     1.000     1.000        22
+  Owczarek niemiecki      1.000     1.000     1.000        23
+              Beagle      0.967     1.000     0.983        29
+    Husky syberyjski      1.000     0.966     0.982        29
+          Rottweiler      1.000     0.957     0.978        23
+   Yorkshire terrier      1.000     1.000     1.000        25
+       Border collie      1.000     1.000     1.000        22
+Welsh corgi pembroke      1.000     1.000     1.000        27
+          Pudel duży      1.000     1.000     1.000        24
+
+            accuracy                          0.992       250
+           macro avg      0.993     0.992     0.992       250
+        weighted avg      0.992     0.992     0.992       250

@@ -1,0 +1,21 @@
+liczba  rasa rzeczywista  ->  rasa przewidziana
+  5  Yorkshire terrier  ->  Owczarek niemiecki
+  4  Beagle  ->  Welsh corgi pembroke
+  3  Owczarek niemiecki  ->  Labrador retriever
+  3  Pudel duży  ->  Labrador retriever
+  3  Labrador retriever  ->  Pudel duży
+  3  Golden retriever  ->  Labrador retriever
+  3  Pudel duży  ->  Border collie
+  3  Beagle  ->  Labrador retriever
+  2  Golden retriever  ->  Welsh corgi pembroke
+  2  Rottweiler  ->  Labrador retriever
+  2  Labrador retriever  ->  Owczarek niemiecki
+  2  Rottweiler  ->  Owczarek niemiecki
+  2  Husky syberyjski  ->  Labrador retriever
+  2  Welsh corgi pembroke  ->  Beagle
+  2  Husky syberyjski  ->  Border collie
+  2  Beagle  ->  Husky syberyjski
+  2  Husky syberyjski  ->  Beagle
+  2  Husky syberyjski  ->  Pudel duży
+  2  Owczarek niemiecki  ->  Husky syberyjski
+  2  Owczarek niemiecki  ->  Pudel duży

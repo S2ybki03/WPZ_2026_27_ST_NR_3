@@ -1,0 +1,16 @@
+{
+  "run": "efficientnet_b0",
+  "model": "efficientnet_b0",
+  "params_mln": 4.02,
+  "best_epoch": 9,
+  "val_acc": 0.996,
+  "test_size": 250,
+  "test_top1": 0.98,
+  "test_top5": 1.0,
+  "test_precision_macro": 0.9803,
+  "test_recall_macro": 0.9808,
+  "test_f1_macro": 0.9802,
+  "latency_ms_gpu": 11.64,
+  "latency_ms_cpu": 29.51,
+  "model_size_mb": 15.6
+}

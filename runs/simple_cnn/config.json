@@ -1,0 +1,17 @@
+{
+  "model": "simple_cnn",
+  "name": "simple_cnn",
+  "epochs": 80,
+  "freeze_epochs": 0,
+  "lr": 0.001,
+  "ft_lr": null,
+  "batch_size": 32,
+  "workers": 8,
+  "no_pretrained": false,
+  "num_classes": 10,
+  "img_size": 224,
+  "train_size": 1166,
+  "val_size": 250,
+  "params": 4719338,
+  "device": "cuda"
+}

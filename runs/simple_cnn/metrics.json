@@ -1,0 +1,16 @@
+{
+  "run": "simple_cnn",
+  "model": "simple_cnn",
+  "params_mln": 4.72,
+  "best_epoch": 75,
+  "val_acc": 0.688,
+  "test_size": 250,
+  "test_top1": 0.716,
+  "test_top5": 0.964,
+  "test_precision_macro": 0.7389,
+  "test_recall_macro": 0.7178,
+  "test_f1_macro": 0.7233,
+  "latency_ms_gpu": 1.47,
+  "latency_ms_cpu": 32.91,
+  "model_size_mb": 18.0
+}

@@ -1,0 +1,17 @@
+{
+  "model": "efficientnet_b0",
+  "name": "efficientnet_b0",
+  "epochs": 15,
+  "freeze_epochs": 3,
+  "lr": 0.001,
+  "ft_lr": 0.0001,
+  "batch_size": 32,
+  "workers": 8,
+  "no_pretrained": false,
+  "num_classes": 10,
+  "img_size": 224,
+  "train_size": 1166,
+  "val_size": 250,
+  "params": 4020358,
+  "device": "cuda"
+}

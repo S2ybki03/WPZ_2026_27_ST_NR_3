@@ -1,0 +1,7 @@
+Ras: 10
+Zdjęć: 1666
+Zdjęć na rasę: min 150 (Golden retriever), max 195 (Beagle), średnio 166.6
+Szerokość: min 140, max 2272, średnio 454 px
+Wysokość: min 134, max 1800, średnio 399 px
+Zdjęć z krótszym bokiem < 224 px: 58
+Podział: train 1166, val 250, test 250

@@ -1,0 +1,7 @@
+liczba  rasa rzeczywista  ->  rasa przewidziana
+  2  Rottweiler  ->  Labrador retriever
+  2  Labrador retriever  ->  Golden retriever
+  1  Welsh corgi pembroke  ->  Husky syberyjski
+  1  Golden retriever  ->  Labrador retriever
+  1  Yorkshire terrier  ->  Golden retriever
+  1  Beagle  ->  Labrador retriever

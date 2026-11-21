@@ -1,0 +1,6 @@
+liczba  rasa rzeczywista  ->  rasa przewidziana
+  1  Welsh corgi pembroke  ->  Husky syberyjski
+  1  Labrador retriever  ->  Yorkshire terrier
+  1  Beagle  ->  Border collie
+  1  Labrador retriever  ->  Owczarek niemiecki
+  1  Rottweiler  ->  Labrador retriever
