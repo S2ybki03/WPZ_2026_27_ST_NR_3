@@ -134,7 +134,7 @@ class App(tk.Tk):
     # ---------- model ----------
     def load_model(self, path):
         if not path.exists():
-            self.set_status(f"Nie znaleziono modelu: {path}. Wybierz plik .pt przyciskiem „Zmień model…”.")
+            self.set_status(f"Nie znaleziono modelu: {path}. Wybierz plik .npz przyciskiem „Zmień model…”.")
             return
         self.btn_open.config(state="disabled")
         self.set_status(f"Wczytywanie modelu {path.name} …")
@@ -160,7 +160,7 @@ class App(tk.Tk):
 
     def choose_model(self):
         path = filedialog.askopenfilename(title="Wybierz plik modelu", initialdir=DEFAULT_MODEL.parent,
-                                          filetypes=[("Model PyTorch", "*.pt"), ("Wszystkie pliki", "*.*")])
+                                          filetypes=[("Model (numpy)", "*.npz"), ("Wszystkie pliki", "*.*")])
         if path:
             self.load_model(Path(path))
 

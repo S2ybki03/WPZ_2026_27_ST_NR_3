@@ -10,13 +10,18 @@ Owczarek niemiecki, Pudel duży, Rottweiler, Welsh corgi pembroke, Yorkshire ter
 ## Uruchomienie aplikacji
 
 Wymagany Python 3.10+ (tkinter jest w standardowej instalacji).
+Aplikacja **nie wymaga PyTorch** - sieć ResNet-50 jest liczona w numpy (`src/classifier.py`),
+więc działa także na komputerach, gdzie PyTorch się nie uruchamia (brak bibliotek Visual C++).
 ```
-pip install torch torchvision pillow
+python -m pip install numpy pillow
 python src/gui.py
 ```
-Karta graficzna nie jest potrzebna - na procesorze analiza zdjęcia trwa ok. 60 ms.
-Aplikacja wczytuje model z `models/dog_breed.pt`; inny plik można wybrać przyciskiem
-„Zmień model…” albo podać w wierszu poleceń: `python src/gui.py runs/mobilenet_v2/best.pt`.
+Wagi modelu: `models/dog_breed.npz` - powstały z wytrenowanego `dog_breed.pt` skryptem
+`tools/export_numpy.py` (BatchNorm wtopiony w konwolucje; wyniki identyczne jak w PyTorch,
+różnica < 0,0001 %). PyTorch jest potrzebny tylko do treningu i oceny modeli.
+Karta graficzna nie jest potrzebna - analiza zdjęcia trwa ok. 0,1-0,3 s.
+Aplikacja wczytuje model z `models/dog_breed.npz`; inny plik można wybrać przyciskiem
+„Zmień model…” albo podać w wierszu poleceń: `python src/gui.py models/dog_breed.npz`.
 
 ## Struktura
 
@@ -31,7 +36,7 @@ src/
   train.py          trening jednego modelu
   evaluate.py       ocena na zbiorze testowym: metryki, macierz pomyłek, F1 dla ras
   compare.py        tabela porównawcza + wybór modelu -> models/dog_breed.pt
-models/dog_breed.pt wybrany, wytrenowany model (ResNet-50)
+models/dog_breed.npz wybrany, wytrenowany model (ResNet-50) w formacie numpy
 runs/<model>/       wyniki każdego eksperymentu (wykresy, metryki)
 reports/            wykresy z EDA, porównanie modeli, zrzuty ekranu GUI
 tools/              skrypty diagnostyczne i test GUI
